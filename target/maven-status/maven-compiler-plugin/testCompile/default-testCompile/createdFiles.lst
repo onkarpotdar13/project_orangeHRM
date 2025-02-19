@@ -1,0 +1,11 @@
+com\base\BaseTest.class
+com\base\BasePage.class
+com\pom\LoginPage.class
+com\pom\PIM_SearchEmployee.class
+com\pom\PIM_PersonalDetailsPage.class
+com\testcases\TC003_PersonalDetailsTest.class
+com\testcases\TC004_SearchEmployee.class
+com\testcases\TC001_LoginTest.class
+com\pom\PIM_AddEmployeePage.class
+com\testcases\TC002_AddEmployeeTest.class
+com\utilities\AllureListener.class

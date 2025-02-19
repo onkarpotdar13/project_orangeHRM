@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.utilities.AllureListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testcases.TC001_LoginTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- com.testcases.TC001_LoginTest -->
+      <class name="com.testcases.TC004_SearchEmployee">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+          <include name="search_Employee"/>
+        </methods>
+      </class> <!-- com.testcases.TC004_SearchEmployee -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
