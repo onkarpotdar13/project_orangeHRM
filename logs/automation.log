@@ -1,9 +1,16 @@
-11:17:23.476 [main] INFO  com.testcases.TC004_SearchEmployeeTest - Step 1: Navigating to Login Page
-11:17:31.868 [main] INFO  com.testcases.TC004_SearchEmployeeTest - Navigating to PIM section
-11:17:35.884 [main] INFO  com.testcases.TC004_SearchEmployeeTest - Verifying Employee Information section
-11:17:35.940 [main] INFO  com.testcases.TC004_SearchEmployeeTest - SECTION : Employee Information
-11:17:37.946 [main] INFO  com.testcases.TC004_SearchEmployeeTest - Searching employee by name
-11:17:59.156 [main] INFO  com.testcases.TC005_DeleteEmployeeTest - ****** START: TC005_DeleteEmployeeTest ******
-11:17:59.156 [main] INFO  com.testcases.TC005_DeleteEmployeeTest - Step 1: Navigating to Login Page
-11:18:02.166 [main] INFO  com.testcases.TC005_DeleteEmployeeTest - Step 2: Navigating to PIM Module
-11:18:04.207 [main] INFO  com.testcases.TC005_DeleteEmployeeTest - Step 2: Action on Delete Operation
+13:07:29.061 [main] INFO  com.testcases.TC004_SearchEmployeeTest - Searching employee by name
+13:09:13.380 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  D:\Teasting_Network\Project_OrangeHRM\paralleltest.xml
+
+13:09:32.866 [TestNG-tests-1] INFO  com.testcases.TC002_AddEmployeeTest - Initializing AI Agent for testing...
+13:09:32.867 [TestNG-tests-2] INFO  com.testcases.TC004_SearchEmployeeTest - Initializing AI Agent for testing...
+13:09:33.079 [TestNG-tests-1] INFO  com.testcases.TC002_AddEmployeeTest - ****** START: TC002_AddEmployeeTest ******
+13:09:33.079 [TestNG-tests-1] INFO  com.testcases.TC002_AddEmployeeTest - Step 1: Navigating to Login Page
+13:09:33.083 [TestNG-tests-2] INFO  com.testcases.TC004_SearchEmployeeTest - *** START TEST CASE: TC004_SearchEmployee ***
+13:09:33.085 [TestNG-tests-2] INFO  com.testcases.TC004_SearchEmployeeTest - Step 1: Navigating to Login Page
+13:09:50.662 [TestNG-tests-2] ERROR com.testcases.TC004_SearchEmployeeTest - Test case failed due to exception: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElement {value=//button[normalize-space()='Login'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:48496, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18072, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48496/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}

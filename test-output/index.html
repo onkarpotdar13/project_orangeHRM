@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Teasting_Network\Project_OrangeHRM\mastergrouping.xml</span>
+                    <span>D:\Teasting_Network\Project_OrangeHRM\paralleltest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>4 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testcases.TC005_DeleteEmployeeTest" class="method navigator-link" hash-for-method="delete_Employee">delete_Employee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testcases.TC001_LoginTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.testcases.TC002_AddEmployeeTest" class="method navigator-link" hash-for-method="add_employee_Details">add_employee_Details</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,25 +112,6 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testcases.TC002_AddEmployeeTest" class="method navigator-link" hash-for-method="add_employee_Details">add_employee_Details</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.testcases.TC003_PersonalDetailsTest" class="method navigator-link" hash-for-method="add_employee_personalDeatails">add_employee_personalDeatails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -150,18 +126,29 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.testcases.TC005_DeleteEmployeeTest</span>
+              <span class="class-name">com.testcases.TC002_AddEmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="delete_Employee">
-                  </a> <!-- delete_Employee -->
-                  <span class="method-name">delete_Employee</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.testcases.TC005_DeleteEmployeeTest.delete_Employee(TC005_DeleteEmployeeTest.java:53)
+                  <a name="add_employee_Details">
+                  </a> <!-- add_employee_Details -->
+                  <span class="method-name">add_employee_Details</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Unable to locate element: //span/h6[text()=&apos;Dashboard&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [67699d72-17d4-4932-9c8f-6ca7c553295e, findElement {value=//span/h6[text()=&apos;Dashboard&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:48496, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18072, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48496/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 67699d72-17d4-4932-9c8f-6ca7c553295e] but found [Dashboard]
+	at com.testcases.TC002_AddEmployeeTest.add_employee_Details(TC002_AddEmployeeTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 21 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -178,105 +165,43 @@
                   <a name="search_Employee">
                   </a> <!-- search_Employee -->
                   <span class="method-name">search_Employee</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [(1) Record Found] but found [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(.,&apos;Record Found&apos;)]&quot;}
-  (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09a75364adbaad4d6f1a1208d5fae4be, findElement {using=xpath, value=//span[contains(.,&apos;Record Found&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62113/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 09a75364adbaad4d6f1a1208d5fae4be]
-	at com.testcases.TC004_SearchEmployeeTest.search_Employee(TC004_SearchEmployeeTest.java:68)
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.testcases.TC004_SearchEmployeeTest.search_Employee(TC004_SearchEmployeeTest.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.testcases.TC001_LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span/h6[text()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1b85b58e25ce4ad345c5f99ac0b74b0, findElement {using=xpath, value=//span/h6[text()=&apos;Dashboard&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61926/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1b85b58e25ce4ad345c5f99ac0b74b0] but found [Dashboard]
-	at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testcases.TC003_PersonalDetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_employee_personalDeatails">
-                  </a> <!-- add_employee_personalDeatails -->
-                  <span class="method-name">add_employee_personalDeatails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.testcases.TC002_AddEmployeeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="add_employee_Details">
-                  </a> <!-- add_employee_Details -->
-                  <span class="method-name">add_employee_Details</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Teasting_Network\Project_OrangeHRM\mastergrouping.xml</span>
+            <span class="header-content">D:\Teasting_Network\Project_OrangeHRM\paralleltest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.utilities.AllureListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;edge_test&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testcases.TC001_LoginTest&quot;/&gt;
       &lt;class name=&quot;com.testcases.TC002_AddEmployeeTest&quot;/&gt;
-      &lt;class name=&quot;com.testcases.TC003_PersonalDetailsTest&quot;/&gt;
-      &lt;class name=&quot;com.testcases.TC004_SearchEmployeeTest&quot;/&gt;
-      &lt;class name=&quot;com.testcases.TC005_DeleteEmployeeTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- edge_test --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;firefox_test&quot;&gt;
+    &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testcases.TC004_SearchEmployeeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- firefox_test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -288,7 +213,10 @@ Session ID: e1b85b58e25ce4ad345c5f99ac0b74b0] but found [Dashboard]
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">edge_test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">firefox_test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,32 +233,12 @@ Session ID: e1b85b58e25ce4ad345c5f99ac0b74b0] but found [Dashboard]
                 <span class="method-in-group-name">add_employee_Details</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">add_employee_personalDeatails</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">delete_Employee</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">master</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">add_employee_Details</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">add_employee_personalDeatails</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">login</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -358,32 +266,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'add_employee_personalDeatails')
-data.setCell(0, 2, 'com.testcases.TC003_PersonalDetailsTest')
-data.setCell(0, 3, 93638);
+data.setCell(0, 1, 'search_Employee')
+data.setCell(0, 2, 'com.testcases.TC004_SearchEmployeeTest')
+data.setCell(0, 3, 17751);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'add_employee_Details')
 data.setCell(1, 2, 'com.testcases.TC002_AddEmployeeTest')
-data.setCell(1, 3, 33256);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'search_Employee')
-data.setCell(2, 2, 'com.testcases.TC004_SearchEmployeeTest')
-data.setCell(2, 3, 28794);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'com.testcases.TC001_LoginTest')
-data.setCell(3, 3, 12490);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'delete_Employee')
-data.setCell(4, 2, 'com.testcases.TC005_DeleteEmployeeTest')
-data.setCell(4, 3, 8225);
+data.setCell(1, 3, 15680);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -409,84 +305,49 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.TC001_LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startUp(windows, chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login</span>
-                <span class="method-start">10120 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">23341 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.testcases.TC002_AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startUp(windows, chrome)</span>
-                <span class="method-start">24104 ms</span>
+                <span class="method-name">startUp(windows, edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">add_employee_Details</span>
-                <span class="method-start">36970 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">70238 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.TC003_PersonalDetailsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startUp(windows, chrome)</span>
-                <span class="method-start">70736 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">add_employee_personalDeatails</span>
-                <span class="method-start">95676 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">189357 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testcases.TC004_SearchEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startUp(windows, chrome)</span>
-                <span class="method-start">190193 ms</span>
+                <span class="method-name">startUp(windows, firefox)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC002_AddEmployeeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">add_employee_Details</span>
+                <span class="method-start">19410 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC004_SearchEmployeeTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">search_Employee</span>
-                <span class="method-start">196700 ms</span>
+                <span class="method-start">19410 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.TC002_AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">225900 ms</span>
+                <span class="method-start">35443 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.TC005_DeleteEmployeeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">startUp(windows, chrome)</span>
-                <span class="method-start">226385 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">delete_Employee</span>
-                <span class="method-start">232375 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">com.testcases.TC004_SearchEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">240917 ms</span>
+                <span class="method-start">37167 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

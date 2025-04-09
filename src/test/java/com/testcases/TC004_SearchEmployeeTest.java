@@ -33,7 +33,7 @@ public class TC004_SearchEmployeeTest extends BaseTest{
 			
 			lp.inputUsername(properties.getProperty("username"));
 			Thread.sleep(2000);
-			lp.inputPasswor(properties.getProperty("password"));
+			lp.inputPassword(properties.getProperty("password"));
 			Thread.sleep(2000);
 			lp.clickLoginBtn();
 			Thread.sleep(2000);

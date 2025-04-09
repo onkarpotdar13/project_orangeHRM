@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 04 13:54:17 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 09 12:56:36 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25842 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28422 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,18 +77,34 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.testcases.TC001_LoginTest.login()'><b>login</b><br>Test class: com.testcases.TC001_LoginTest</td>
-<td><div><pre>java.lang.AssertionError: null
-	at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:32)
+<td><div><pre>java.lang.AssertionError: expected [Tried to run command without establishing a connection
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [543884c3-fb8f-46b3-b925-70955492e23f, findElement {using=xpath, value=//span/h6[text()=&apos;Dashboard&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:9830, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11520, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9830/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 543884c3-fb8f-46b3-b925-70955492e23f] but found [Dashboard]
+	at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199822275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace199822275'><pre>java.lang.AssertionError: null
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace891868856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace891868856'><pre>java.lang.AssertionError: expected [Tried to run command without establishing a connection
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [543884c3-fb8f-46b3-b925-70955492e23f, findElement {using=xpath, value=//span/h6[text()=&apos;Dashboard&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:9830, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11520, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9830/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 543884c3-fb8f-46b3-b925-70955492e23f] but found [Dashboard]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:32)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -110,8 +126,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
 </pre></div></td>
-<td>2</td>
-<td>com.testcases.TC001_LoginTest@7a1a3478</td></tr>
+<td>7</td>
+<td>com.testcases.TC001_LoginTest@7a083b96</td></tr>
 </table><p>
 </body>
 </html>

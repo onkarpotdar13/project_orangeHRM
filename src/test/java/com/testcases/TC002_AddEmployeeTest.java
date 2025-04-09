@@ -36,7 +36,7 @@ public class TC002_AddEmployeeTest extends BaseTest {
 			Assert.assertEquals("Login", currentPage);
 
 			lp.inputUsername(properties.getProperty("username"));
-			lp.inputPasswor(properties.getProperty("password"));
+			lp.inputPassword(properties.getProperty("password"));
 			lp.clickLoginBtn();
 
 			String nextPage = lp.nextPageDisplay();

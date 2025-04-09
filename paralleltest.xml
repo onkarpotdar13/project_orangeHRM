@@ -29,7 +29,7 @@
   <parameter name="browser" value="firefox"></parameter>
   
     <classes>
-      <class name="com.testcases.TC004_SearchEmployee"/>
+      <class name="com.testcases.TC004_SearchEmployeeTest"/>
     </classes>
   </test> <!-- Test -->
   

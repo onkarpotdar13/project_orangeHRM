@@ -40,14 +40,14 @@ public class PIM_DeleteEmployeePage extends BasePage{
 	WebElement btn_cnfmDelete;
 	
 	
-	// methods
+	// action methods
 	@Step("Get total pages in pagination")
 	public int getTotalPages() {
 		String totalPages = wait.until(ExpectedConditions.visibilityOf(lastPage)).getText();
 		return Integer.parseInt(totalPages);
 	}
 	
-	@Step("Search for employee by last name: {0}")
+	@Step("Search and select employee by last name: {0}")
 	public boolean searchAndSelectEmployee(String lastName) {
 		
 		boolean isFound = false;
@@ -77,7 +77,7 @@ public class PIM_DeleteEmployeePage extends BasePage{
 		return isFound;
 	}
 	
-	@Step("Delete the selected employee(last name)")
+	@Step("Delete the selected employee")
 	public void deleteSelectedEmployee() {
 		wait.until(ExpectedConditions.elementToBeClickable(btn_Delete)).click();
 		wait.until(ExpectedConditions.elementToBeClickable(btn_cnfmDelete)).click();

@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.base.BasePage;
 
+import io.qameta.allure.Step;
+
 public class PIM_AddEmployeePage extends BasePage{
 
 	// constructor
@@ -50,10 +52,12 @@ public class PIM_AddEmployeePage extends BasePage{
 	
 	// action methods
 	
+	@Step("Click on PIM module")
 	public void click_PIM() {
 		btn_PIM.click();
 	}
 	
+	@Step("Check if PIM Page is displayed")
 	public boolean display_PIMPage() {
 		try {
 			return title_PIMPage.isDisplayed();
@@ -62,6 +66,7 @@ public class PIM_AddEmployeePage extends BasePage{
 		}
 	}
 	
+	@Step("Click on Add button")
 	public void click_AddBtn() {
 		btn_Add.click();
 	}
@@ -74,30 +79,37 @@ public class PIM_AddEmployeePage extends BasePage{
 		}
 	}
 	
+	@Step("Enter First Name: {0}")
 	public void inputFName(String fname) {
 		ip_FName.sendKeys(fname);
 	}
 	
+	@Step("Enter Middle Name: {0}")
 	public void inputMName(String mname) {
 		ip_MName.sendKeys(mname);
 	}
 	
+	@Step("Enter Last Name: {0}")
 	public void inputLName(String lname) {
 		ip_LName.sendKeys(lname);
 	}
 	
+//	@Step("Clear Employee ID field")
 //	public void clearEmpId() {
 //		clr_EmpID.clear();
 //	}
 //	
+//	@Step("Enter Employee ID: {0}")
 //	public void inputEmpId(String empID) {
 //		ip_EmpID.sendKeys(empID);
 //	}
 	
+	@Step("Click ont save button")
 	public void click_SaveBtn() {
 		btn_save.click();
 	}
 	
+	@Step("Fetch Success Message")
 	public String successMsg() {
 		try {
 			return (success_Msg.getText());

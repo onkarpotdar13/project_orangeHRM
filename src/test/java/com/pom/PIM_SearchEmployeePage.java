@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.base.BasePage;
 
+import io.qameta.allure.Step;
+
 public class PIM_SearchEmployeePage extends BasePage{
 
 	// constructor
@@ -40,6 +42,7 @@ public class PIM_SearchEmployeePage extends BasePage{
 	
 
 	// action method
+	@Step("Display Profile Name")
 	public String title_Section() {
 		try {
 			return (search_section_Title.getText());
@@ -48,14 +51,17 @@ public class PIM_SearchEmployeePage extends BasePage{
 		}
 	}
 	
+	@Step("Search By Employee Name: {0}")
 	public void searchByName(String name) {
 		search_ByName.sendKeys(name);
 	}
 	
+	@Step("Click on Search Button")
 	public void click_SearchBtn() {
 		btn_Search.click();
 	}
 	
+	@Step("Fetch Success Message")
 	public String foundNameMessage() {
 		try {
 			return (msg_FoundName.getText());
@@ -65,14 +71,17 @@ public class PIM_SearchEmployeePage extends BasePage{
 		
 	}
 	
+	@Step("Click on Reset Button")
 	public void click_ResetBtn() {
 		btn_Reset.click();
 	}
 	
+	@Step("Search By Employee ID: {0}")
 	public void searchById(String id) {
 		search_ById.sendKeys(id);
 	}
 	
+	@Step("Click on Check Box")
 	public void click_CheckBox() {
 		if(msg_FoundId.isDisplayed()) {
 			checkbox_FoundEmp.click();

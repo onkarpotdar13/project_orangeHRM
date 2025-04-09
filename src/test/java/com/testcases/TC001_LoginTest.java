@@ -32,7 +32,7 @@ public class TC001_LoginTest extends BaseTest{
 			Assert.assertEquals("Login", currentPage);
 			logger.info("*** PASS VALUES --> TEST ***");
 			lp.inputUsername(properties.getProperty("usernameI"));
-			lp.inputPasswor(properties.getProperty("passwordI"));
+			lp.inputPassword(properties.getProperty("passwordI"));
 			lp.clickLoginBtn();
 			
 			logger.info("*** DISPLAY ACCSEPTED PAGE --> TEST ***");

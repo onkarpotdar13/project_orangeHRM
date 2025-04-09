@@ -35,7 +35,7 @@ public class TC003_PersonalDetailsTest extends BaseTest {
 			Thread.sleep(2000);
 
 			lp.inputUsername(properties.getProperty("username"));
-			lp.inputPasswor(properties.getProperty("password"));
+			lp.inputPassword(properties.getProperty("password"));
 			lp.clickLoginBtn();
 			Thread.sleep(2000);
 

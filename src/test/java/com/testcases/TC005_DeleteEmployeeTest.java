@@ -32,7 +32,7 @@ public class TC005_DeleteEmployeeTest extends BaseTest{
 			logger.info("Step 1: Navigating to Login Page");
 			LoginPage lp = new LoginPage(driver);
 			lp.inputUsername(properties.getProperty("username"));
-			lp.inputPasswor(properties.getProperty("password"));
+			lp.inputPassword(properties.getProperty("password"));
 			lp.clickLoginBtn();
 			Assert.assertTrue(lp.nextPageDisplay().contains("Dashboard"), "Login failed!");
 			

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 import com.base.BasePage;
 
+import io.qameta.allure.Step;
+
 public class PIM_PersonalDetailsPage extends BasePage{
 
 	// constructor
@@ -110,6 +112,7 @@ public class PIM_PersonalDetailsPage extends BasePage{
 	WebElement txt_fileName;
 	
 	// action methods
+	@Step("Display Profile Name")
 	public String display_Profile() {
 		try {
 			return (pro_Name.getText());
@@ -118,7 +121,7 @@ public class PIM_PersonalDetailsPage extends BasePage{
 		}
 	}
 	
-	
+	@Step("Display Section First Title")
 	public String display_SectionFirst() {
 		try {
 			return (title_section_1.getText());
@@ -127,20 +130,23 @@ public class PIM_PersonalDetailsPage extends BasePage{
 		}
 	}
 	
+	@Step("Enter Input other ID: {0}")
 	public void inputOtherId(String id) {
 		ip_OtherId.sendKeys(id);
 	}
 	
-	
+	@Step("Enter License ID: {0}")
 	public void inputLicenseId(String liid) {
 		ip_LicenceId.sendKeys(liid);
 	}
 	
 	/* license expire date Date Pickers --> Future */	
+	@Step("Click on License Expiry Date-Picker")
 	public void click_DateBarLED() {
 		dateBarLED.click();
 	}
 	
+	@Step("Select License Expiry Date: {0}-{1}-{2}")
 	public void selectLicenseDate(String mm, String dd, String yyyy) throws InterruptedException {
 		
 		while(true) {
@@ -166,10 +172,12 @@ public class PIM_PersonalDetailsPage extends BasePage{
 	
 	
 	/* Date of Birth --> Date Pickers --> Past */ 
+	@Step("Click on Date-OF-Birth Picker")
 	public void click_DateDOB() {
 		dateBarDOB.click();
 	}
 	
+	@Step("Select Date-OF-Birth: {0}-{1}-{2}")
 	public void selectDOBDate(String mm, String dd, String yyyy) throws InterruptedException {
 		
 		while(true) {
@@ -194,11 +202,13 @@ public class PIM_PersonalDetailsPage extends BasePage{
 	}
 	
 	// radio button
+	@Step("Click on Gender Radio Button")
 	public void click_GenderBtn() {
 		rbtn_Gender.click();
 	}
 	
 	// handle drop down selecting country
+	@Step("Select Country: {0}")
 	public void selectCountry(String nationality) {
 		
 		dd_Nationality.click();
@@ -212,6 +222,7 @@ public class PIM_PersonalDetailsPage extends BasePage{
 	}
 	
 	// handle drop down selecting marital status 
+	@Step("Select State: {0}")
 	public void selectingMarriageStatus(String status) {
 		
 		dd_MaritalSatus.click();
@@ -224,6 +235,7 @@ public class PIM_PersonalDetailsPage extends BasePage{
 		}
 	}
 	
+	@Step("Display Section Second Title")
 	public String display_SectionSecond() {
 		try {
 			return (title_section_2.getText());
@@ -233,6 +245,7 @@ public class PIM_PersonalDetailsPage extends BasePage{
 	}
 	
 	// handle drop down selecting blood type
+	@Step("Select Blood Type: {0}")
 	public void selectiongBloodType(String blood) {
 		
 		dd_BloodType.click();
@@ -245,10 +258,12 @@ public class PIM_PersonalDetailsPage extends BasePage{
 		}
 	}
 	
+	@Step("Enter Test Field Name: {0}")
 	public void inputTestField(String test) {
 		ip_testField.sendKeys(test);
 	}
 	
+	@Step("Display Section Third Title")
 	public String display_SectionThird() {
 		try {
 			return (title_section_3.getText());
@@ -257,18 +272,22 @@ public class PIM_PersonalDetailsPage extends BasePage{
 		}
 	}
 	
+	@Step("Click on Add Attacment Button")
 	public void click_fileAddBtn() {
 		btn_addAttachment.click();
 	}
 	
+	@Step("Click on Browse File Button")
 	public void click_fileBrowseBtn() {
 		btn_fileBrowse.click();
 	}
 	
+	@Step("Select File: {0}")
 	public void select_File(String file) {
 		select_fileName.sendKeys(file);
 	}
 	
+	@Step("Get Selected File Name")
 	public String name_File() {
 		return txt_fileName.getText();
 	}

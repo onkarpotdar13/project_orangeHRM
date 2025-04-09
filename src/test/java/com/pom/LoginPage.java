@@ -47,7 +47,7 @@ public class LoginPage extends BasePage {
 	}
 
 	@Step("Enter password: {0}")
-	public void inputPasswor(String password) {
+	public void inputPassword(String password) {
 		ip_Password.sendKeys(password);
 	}
 

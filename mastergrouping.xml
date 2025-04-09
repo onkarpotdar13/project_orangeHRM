@@ -28,15 +28,18 @@
 		<parameter name="browser" value="chrome"></parameter>
 
 		<classes>
-			<class name="com.testcases.TC001_LoginTest" />
-
 			<class name="com.testcases.TC002_AddEmployeeTest" />
+			<class name="com.testcases.TC004_SearchEmployeeTest" />
+
+			<!--<class name="com.testcases.TC001_LoginTest" />
 
 			<class name="com.testcases.TC003_PersonalDetailsTest" />
 
-			<class name="com.testcases.TC004_SearchEmployeeTest" />
 			
 			<class name="com.testcases.TC005_DeleteEmployeeTest" />
+			
+			<class name="com.testcases.TC006_LoginAITest" />-->
+			
 		</classes>
 
 	</test> <!--

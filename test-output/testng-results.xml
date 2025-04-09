@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T11:14:06 IST" name="Suite" finished-at="2025-02-19T11:18:08 IST" duration-ms="241434">
+  <suite started-at="2025-04-09T13:09:13 IST" name="Suite" finished-at="2025-04-09T13:09:50 IST" duration-ms="37243">
     <groups>
       <group name="functional">
-        <method signature="TC002_AddEmployeeTest.add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@4b325930]" name="add_employee_Details" class="com.testcases.TC002_AddEmployeeTest"/>
-        <method signature="TC003_PersonalDetailsTest.add_employee_personalDeatails()[pri:0, instance:com.testcases.TC003_PersonalDetailsTest@267f9765]" name="add_employee_personalDeatails" class="com.testcases.TC003_PersonalDetailsTest"/>
-        <method signature="TC005_DeleteEmployeeTest.delete_Employee()[pri:0, instance:com.testcases.TC005_DeleteEmployeeTest@261de205]" name="delete_Employee" class="com.testcases.TC005_DeleteEmployeeTest"/>
+        <method signature="TC002_AddEmployeeTest.add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@2a140ce5]" name="add_employee_Details" class="com.testcases.TC002_AddEmployeeTest"/>
       </group> <!-- functional -->
-      <group name="regression">
-        <method signature="TC001_LoginTest.login()[pri:0, instance:com.testcases.TC001_LoginTest@3b9ac754]" name="login" class="com.testcases.TC001_LoginTest"/>
-      </group> <!-- regression -->
       <group name="sanity">
-        <method signature="TC004_SearchEmployeeTest.search_Employee()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@79ba0a6f]" name="search_Employee" class="com.testcases.TC004_SearchEmployeeTest"/>
+        <method signature="TC004_SearchEmployeeTest.search_Employee()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@b950f82]" name="search_Employee" class="com.testcases.TC004_SearchEmployeeTest"/>
       </group> <!-- sanity -->
       <group name="master">
-        <method signature="TC002_AddEmployeeTest.add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@4b325930]" name="add_employee_Details" class="com.testcases.TC002_AddEmployeeTest"/>
-        <method signature="TC003_PersonalDetailsTest.add_employee_personalDeatails()[pri:0, instance:com.testcases.TC003_PersonalDetailsTest@267f9765]" name="add_employee_personalDeatails" class="com.testcases.TC003_PersonalDetailsTest"/>
+        <method signature="TC002_AddEmployeeTest.add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@2a140ce5]" name="add_employee_Details" class="com.testcases.TC002_AddEmployeeTest"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2025-02-19T11:14:06 IST" name="Test" finished-at="2025-02-19T11:18:08 IST" duration-ms="241434">
+    <test started-at="2025-04-09T13:09:13 IST" name="edge_test" finished-at="2025-04-09T13:09:50 IST" duration-ms="37091">
       <class name="com.testcases.TC002_AddEmployeeTest">
-        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC002_AddEmployeeTest@4b325930]" started-at="2025-02-19T11:14:30 IST" name="startUp" finished-at="2025-02-19T11:14:43 IST" duration-ms="12854" status="PASS">
+        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC002_AddEmployeeTest@2a140ce5]" started-at="2025-04-09T13:09:13 IST" name="startUp" finished-at="2025-04-09T13:09:32 IST" duration-ms="19365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,161 +25,41 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method signature="add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@4b325930]" started-at="2025-02-19T11:14:43 IST" name="add_employee_Details" finished-at="2025-02-19T11:15:16 IST" duration-ms="33256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_employee_Details -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@4b325930]" started-at="2025-02-19T11:15:17 IST" name="tearDown" finished-at="2025-02-19T11:15:17 IST" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testcases.TC002_AddEmployeeTest -->
-      <class name="com.testcases.TC005_DeleteEmployeeTest">
-        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC005_DeleteEmployeeTest@261de205]" started-at="2025-02-19T11:17:53 IST" name="startUp" finished-at="2025-02-19T11:17:59 IST" duration-ms="5989" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="delete_Employee()[pri:0, instance:com.testcases.TC005_DeleteEmployeeTest@261de205]" started-at="2025-02-19T11:17:59 IST" name="delete_Employee" finished-at="2025-02-19T11:18:07 IST" duration-ms="8225" status="FAIL">
+        <test-method signature="add_employee_Details()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@2a140ce5]" started-at="2025-04-09T13:09:32 IST" name="add_employee_Details" finished-at="2025-04-09T13:09:48 IST" duration-ms="15680" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.testcases.TC005_DeleteEmployeeTest.delete_Employee(TC005_DeleteEmployeeTest.java:53)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete_Employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC005_DeleteEmployeeTest@261de205]" started-at="2025-02-19T11:18:07 IST" name="tearDown" finished-at="2025-02-19T11:18:08 IST" duration-ms="442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testcases.TC005_DeleteEmployeeTest -->
-      <class name="com.testcases.TC003_PersonalDetailsTest">
-        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC003_PersonalDetailsTest@267f9765]" started-at="2025-02-19T11:15:17 IST" name="startUp" finished-at="2025-02-19T11:15:42 IST" duration-ms="24937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="add_employee_personalDeatails()[pri:0, instance:com.testcases.TC003_PersonalDetailsTest@267f9765]" started-at="2025-02-19T11:15:42 IST" name="add_employee_personalDeatails" finished-at="2025-02-19T11:17:16 IST" duration-ms="93638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_employee_personalDeatails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC003_PersonalDetailsTest@267f9765]" started-at="2025-02-19T11:17:16 IST" name="tearDown" finished-at="2025-02-19T11:17:16 IST" duration-ms="836" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testcases.TC003_PersonalDetailsTest -->
-      <class name="com.testcases.TC004_SearchEmployeeTest">
-        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@79ba0a6f]" started-at="2025-02-19T11:17:16 IST" name="startUp" finished-at="2025-02-19T11:17:23 IST" duration-ms="6505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="search_Employee()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@79ba0a6f]" started-at="2025-02-19T11:17:23 IST" name="search_Employee" finished-at="2025-02-19T11:17:52 IST" duration-ms="28794" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [(1) Record Found] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'Record Found')]"}
-  (Session info: chrome=133.0.6943.98)
+              <![CDATA[expected [Unable to locate element: //span/h6[text()='Dashboard']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09a75364adbaad4d6f1a1208d5fae4be, findElement {using=xpath, value=//span[contains(.,'Record Found')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62113/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 09a75364adbaad4d6f1a1208d5fae4be]]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [67699d72-17d4-4932-9c8f-6ca7c553295e, findElement {value=//span/h6[text()='Dashboard'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:48496, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18072, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48496/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 67699d72-17d4-4932-9c8f-6ca7c553295e] but found [Dashboard]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [(1) Record Found] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(.,'Record Found')]"}
-  (Session info: chrome=133.0.6943.98)
+              <![CDATA[java.lang.AssertionError: expected [Unable to locate element: //span/h6[text()='Dashboard']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [09a75364adbaad4d6f1a1208d5fae4be, findElement {using=xpath, value=//span[contains(.,'Record Found')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62113}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62113/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 09a75364adbaad4d6f1a1208d5fae4be]
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [67699d72-17d4-4932-9c8f-6ca7c553295e, findElement {value=//span/h6[text()='Dashboard'], using=xpath}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.1, moz:accessibilityChecks: false, moz:buildID: 20250407111027, moz:debuggerAddress: 127.0.0.1:48496, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18072, moz:profile: C:\Users\Win-10\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:48496/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 67699d72-17d4-4932-9c8f-6ca7c553295e] but found [Dashboard]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.TC004_SearchEmployeeTest.search_Employee(TC004_SearchEmployeeTest.java:68)
+at com.testcases.TC002_AddEmployeeTest.add_employee_Details(TC002_AddEmployeeTest.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -200,113 +74,83 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_employee_Details -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC002_AddEmployeeTest@2a140ce5]" started-at="2025-04-09T13:09:48 IST" name="tearDown" finished-at="2025-04-09T13:09:50 IST" duration-ms="1571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.TC002_AddEmployeeTest -->
+    </test> <!-- edge_test -->
+    <test started-at="2025-04-09T13:09:13 IST" name="firefox_test" finished-at="2025-04-09T13:09:50 IST" duration-ms="37243">
+      <class name="com.testcases.TC004_SearchEmployeeTest">
+        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@b950f82]" started-at="2025-04-09T13:09:13 IST" name="startUp" finished-at="2025-04-09T13:09:32 IST" duration-ms="19366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="search_Employee()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@b950f82]" started-at="2025-04-09T13:09:32 IST" name="search_Employee" finished-at="2025-04-09T13:09:50 IST" duration-ms="17751" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at com.testcases.TC004_SearchEmployeeTest.search_Employee(TC004_SearchEmployeeTest.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_Employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@79ba0a6f]" started-at="2025-02-19T11:17:52 IST" name="tearDown" finished-at="2025-02-19T11:17:53 IST" duration-ms="484" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC004_SearchEmployeeTest@b950f82]" started-at="2025-04-09T13:09:50 IST" name="tearDown" finished-at="2025-04-09T13:09:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testcases.TC004_SearchEmployeeTest -->
-      <class name="com.testcases.TC001_LoginTest">
-        <test-method is-config="true" signature="startUp(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.TC001_LoginTest@3b9ac754]" started-at="2025-02-19T11:14:06 IST" name="startUp" finished-at="2025-02-19T11:14:16 IST" duration-ms="10069" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startUp -->
-        <test-method signature="login()[pri:0, instance:com.testcases.TC001_LoginTest@3b9ac754]" started-at="2025-02-19T11:14:16 IST" name="login" finished-at="2025-02-19T11:14:29 IST" duration-ms="12490" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [no such element: Unable to locate element: {"method":"xpath","selector":"//span/h6[text()='Dashboard']"}
-  (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1b85b58e25ce4ad345c5f99ac0b74b0, findElement {using=xpath, value=//span/h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61926/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1b85b58e25ce4ad345c5f99ac0b74b0] but found [Dashboard]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [no such element: Unable to locate element: {"method":"xpath","selector":"//span/h6[text()='Dashboard']"}
-  (Session info: chrome=133.0.6943.98)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1b85b58e25ce4ad345c5f99ac0b74b0, findElement {using=xpath, value=//span/h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.98, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Win-10\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61926}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61926/devtoo..., se:cdpVersion: 133.0.6943.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1b85b58e25ce4ad345c5f99ac0b74b0] but found [Dashboard]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.TC001_LoginTest.login(TC001_LoginTest.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testcases.TC001_LoginTest@3b9ac754]" started-at="2025-02-19T11:14:30 IST" name="tearDown" finished-at="2025-02-19T11:14:30 IST" duration-ms="759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testcases.TC001_LoginTest -->
-    </test> <!-- Test -->
+    </test> <!-- firefox_test -->
   </suite> <!-- Suite -->
 </testng-results>
