@@ -1,9 +1,9 @@
 📅 Project Info
 Project Name: Hybrid Automation Framework – OrangeHRM
 
-Created On: February 19, 2025
-
 Created By: Onkar H Potdar
+
+Created On: February 19, 2025 (Wednesday)
 
 Contact: onkarpotdar13@gmail.com
 
