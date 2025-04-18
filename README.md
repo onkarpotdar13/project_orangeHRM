@@ -1,5 +1,4 @@
-📅 Project Info
-Project Name: Hybrid Automation Framework – OrangeHRM
+📅 Project Name: Hybrid Automation Framework – OrangeHRM
 
 Created By: Onkar H Potdar
 
